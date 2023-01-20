@@ -1,0 +1,9 @@
+Actuator override funktioniert NUR dann wenn:
+1. flightmode ist roscontrolled
+2. FC ist armed
+3. ActuatorSettings->AllowActuatorOverride ist für den Channel auf True
+4. uav_pose message /command empfangen mit flightmode=3 (actuators)
+5. LibrepilotActuators /actuatorcommand empfangen mit PWM werten innerhalb der letzten ActuatorSettings->AcuatorOverrideValidTime millisekunden
+Alle 5 Kriterien müssen zustreffen
+Config error kann man umgehen mittels FlightModeSettings->DisableSanityChecks auf True
+Ggf FlightModeSettings->Arming auf Always Armed
