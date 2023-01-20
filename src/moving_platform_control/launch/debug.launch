@@ -1,0 +1,10 @@
+<launch>
+<param name="use_sim_time" value="false"/>
+<arg name="mp_name" default="moving_platform"/>
+  <group ns="$(arg mp_name)">
+    <node name="debug_node" pkg="moving_platform_control" type="debug.py" output="screen" >
+        <param name = "publish_hz" value = "100" />
+        <param name = "mp_name" value = "$(arg mp_name)" />
+    </node> 
+  </group>  
+</launch>
