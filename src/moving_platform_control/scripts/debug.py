@@ -19,12 +19,12 @@ class Debug():
         self.test_values = [1611,1622,1633,1644,0,1,2,3,4,5,6,7]
 
     def send_msg(self):
-        msg = LibrepilotActuators()
-        msg.data.data = self.test_values
-        self.actuator_publisher.publish(msg)
-        msg_pose = uav_pose()
-        msg_pose.flightmode = 3
-        self.uav_pose_publisher.publish(msg_pose)
+        msg_actuatorcommand = LibrepilotActuators()
+        msg_actuatorcommand.data.data = self.test_values
+        self.actuator_publisher.publish(msg_actuatorcommand)
+        msg_command = uav_pose()
+        msg_command.flightmode = 3
+        self.uav_pose_publisher.publish(msg_command)
         return
 
 
@@ -35,5 +35,6 @@ if __name__ == '__main__':
     while not rospy.is_shutdown():
         debug.send_msg()
         rate.sleep()
+
 
 
