@@ -22,8 +22,8 @@
 
   <node name="mp_controller" pkg="pid" type="controller" ns="mp_controller" output="screen" >
       <param name="node_name" value="pid_v_z" />
-      <param name="Kp" value="1500" />
-      <param name="Ki" value="300" />
+      <param name="Kp" value="2000" />
+      <param name="Ki" value="900" />
       <param name="Kd" value="0" />
       <param name="upper_limit" value="500" />
       <param name="lower_limit" value="-500" />
