@@ -20,7 +20,7 @@ max_amplitude = float(rospy.get_param(rospy.get_namespace()+node_name+'/max_ampl
 pwm_neutral = float(rospy.get_param(rospy.get_namespace()+node_name+'/pwm_neutral','1500'))
 actuator_topic = ('actuatorcommand',LibrepilotActuators)
 uav_pose_topic = ('command',uav_pose)
-mp_pose_topic = ('/vicon/moving_platform/pose_enu',PoseStamped)
+mp_pose_topic = ('/vicon/moving_platform/pose_enu_filtered',PoseStamped)
 mp_control_effort_topic = ('/vicon/moving_platform/controller/control_effort',Float64)
 mp_control_state_topic = ('/vicon/moving_platform/controller/state',Float64)
 
