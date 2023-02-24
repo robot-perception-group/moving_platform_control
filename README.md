@@ -76,4 +76,4 @@ rosrun librepilot librepilot_node moving_platform /dev/ttyACM0 115200 _name:=mov
 ## 
 ## 
 
-*Disclaimer:* Use at own risk. The author and contributors cannot be held responsible for any damage to hardware or persons. 
+*Disclaimer:* Use at own risk. The author, contributors and associated affiliations cannot be held responsible for any damage to hardware or persons. 
