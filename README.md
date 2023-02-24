@@ -19,7 +19,7 @@ The LibrePilot GCS software is used to configure the flight controller board. Fo
 In the configuration pane in of the LibrePilot GCS configure the settings as needed for your remote control.
 
 ## Building ROS Nodes
-In order to build the ROS nodes, `cd` in the root directory of the downloaded github repository and run 
+In order to build the ROS nodes, `cd` into the root directory of the downloaded github repository and run 
 ```
 catkin_make
 ```
