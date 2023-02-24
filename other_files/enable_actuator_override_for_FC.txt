@@ -7,6 +7,6 @@ Actuator override only works when the following criteria are met:
 5. LibrePilotActuators on topic /actuatorcommand with PWM values received within the time period specified by Settings-->ActuatorSettings--> ActuatorOverrideValidTime in milliseconds
 Config error can be avoided by settings FlightModeSettings--> DisableSanityChecks to true
 Possibly set FlightModeSettins--> Arming to always armed
-First the FC has to be armed and to be in ROSControl mode beofre the uav_pose message with flightmode 3 is sent over the network
+First the FC has to be armed and to be in ROSControl mode before the uav_pose message with flightmode 3 is sent over the network
 The respective actuator channel has to be configured in Config--> Actuators, the corresponding channel in the mixermatrix has to be assigned to something (in vehicle setup) and must also be assigned a type, such as servo, motor and must also have default values.
-The Flight time error can be turned off by setting Settings -> Sensors --> FlightBatterySettings--> Capacity --> 0 maH
+The flight time error can be turned off by setting Settings -> Sensors --> FlightBatterySettings--> Capacity --> 0 maH
